@@ -1,3 +1,3 @@
-<template>
-    <earth/>
-</template>
+<ClientOnly>
+  <earth/>
+</ClientOnly>

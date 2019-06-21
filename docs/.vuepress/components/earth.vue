@@ -215,7 +215,7 @@
 <style>
     .content:not(.custom) {
         width: 100% !important;
-        max-width: -webkit-fill-available;
+        max-width: 94%!important;
         margin: 0 !important;
     }
 
