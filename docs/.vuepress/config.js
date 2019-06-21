@@ -15,7 +15,7 @@ module.exports = {
             { text: 'Home', link: '/' },
             { text: 'FirstBlog', link: './blog/FirstBlog.md' },
         ],
-        // serviceWorker: true, //PWA配置
+        serviceWorker: true, //PWA配置
 
 
         //侧边栏
@@ -25,4 +25,4 @@ module.exports = {
         ],
 
     }
-};
+}
