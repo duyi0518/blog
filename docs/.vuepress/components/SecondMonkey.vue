@@ -22,7 +22,6 @@
         },
         methods: {
             change() {
-
                 this.$nextTick(()=>{
                     // let a = document.getElementsByClassName("textChange")[0];
                     let a = this.$refs.textChange;
