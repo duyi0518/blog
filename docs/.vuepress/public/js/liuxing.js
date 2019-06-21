@@ -47,7 +47,7 @@
 
     Scene.prototype = {
         constructor: Scene,
-// 
+//
         init: function () {
             if (!this.fCanvas) {
                 return

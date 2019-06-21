@@ -1,152 +1,126 @@
 <template>
-    <div class="">
-        <!--时钟-->
-        <canvas id="canvasTime" width="200" height="200"></canvas>
+    <!--猴子-->
+    <div class="monkey">
+        <div class="monkeyColor">
+            <div class="textChange" ref="textChange">🐒🐒🐒🐒🐒🐒</div>
+        </div>
+        <div class="textImg">
+            <img src="../../.vuepress/public/img/wukong.png" alt class="monkeyImg">
+        </div>
     </div>
 </template>
 <script>
-
     export default {
-        data () {
-            return {
-            }
+        data() {
+            return {}
+        },
+        created(){
+
+        },
+        mounted() {
+            this.change();
         },
         methods: {
+            change() {
 
+                this.$nextTick(()=>{
+                    // let a = document.getElementsByClassName("textChange")[0];
+                    let a = this.$refs.textChange;
+                    // window.location.reload(true);  刷新页面
+                    let array = ["🐷🐷🐷🐷🐷", "🐶🐶🐶🐶🐶", "🐱🐱🐱🐱",'🐼🐼🐼🐼'],
+                        index = -1;
+                    window.onload = function () {
+                        setInterval(() => {
+                            index++;
+                            index = index > array.length - 1 ? 0 : index;
+                            a.innerHTML = array[index];
+                        }, 2000);
+                    };
+                })
+
+            },
         },
-        mounted () {
-            //是时钟
-            var canvas = document.getElementById('canvasTime');
-            var cxt = canvas.getContext('2d');
-            var width = canvas.width;
-            var height = canvas.height;
-            var r = width / 2;
-
-            function drawBg() {
-                //重置原点
-                cxt.save();
-                cxt.translate(r, r);
-
-                // 画时钟外圈
-                cxt.beginPath();
-                cxt.arc(0, 0, r - 5, 0, 2 * Math.PI, true);
-                cxt.lineWidth = 2;//表盘宽度
-                cxt.stroke();
-
-                //画小时数
-                var hour = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2];
-
-                hour.forEach(function (num, i) {
-                    var rad = 2 * Math.PI / 12 * i;
-                    var x = Math.cos(rad) * (r - 14);//数字到外表盘到距离
-                    var y = Math.sin(rad) * (r - 14);//数字到外表盘到距离
-                    cxt.font = "11px sans-serif"
-                    cxt.textAlign = "center";
-                    cxt.textBaseline = "middle";
-                    cxt.fillText(num, x, y);
-                });
-
-                // 画刻度
-                for (var i = 0; i < 60; i++) {
-                    var rad = 2 * Math.PI / 60 * i;
-                    var x = Math.cos(rad) * (r - 22);//刻度到数字之间的距离
-                    var y = Math.sin(rad) * (r - 22);
-
-                    cxt.beginPath();
-                    if (i % 5 == 0) {
-                        cxt.fillStyle = "#000";
-                        cxt.arc(x, y, 2, 0, 2 * Math.PI, true);
-                    }
-                    else {
-                        cxt.fillStyle = "#bbb";
-                        cxt.arc(x, y, 2, 0, 2 * Math.PI, true);
-                    }
-                    cxt.fill();
-                }
-            }
-
-            // 画时针
-            function drawHour(hour, minute) {
-                cxt.save();
-                var rad = 2 * Math.PI / 12 * hour + 2 * Math.PI / 12 * minute / 60;
-                cxt.beginPath();
-                cxt.rotate(rad);
-                cxt.moveTo(0, 5);  //时针后面的长度
-                cxt.lineTo(0, -r / 2.5);//时针前面的长度
-                cxt.lineWidth = 2;
-                cxt.lineCap = "round";
-                cxt.stroke();
-                cxt.restore();
-            }
-
-            // 画分针
-            function drawMinute(minute) {
-                cxt.save();
-                var rad = 2 * Math.PI / 60 * minute;
-                cxt.beginPath();
-                cxt.rotate(rad);
-                cxt.moveTo(0, 5);
-                cxt.lineTo(0, -r + 30);
-                cxt.lineWidth = 1;
-                cxt.lineCap = "round";
-                cxt.stroke();
-                cxt.restore();
-            }
-
-            // 画秒针
-            function drawSecond(second) {
-                cxt.save();
-                var rad = 2 * Math.PI / 60 * second;
-                cxt.beginPath();
-                cxt.rotate(rad);
-                cxt.moveTo(0, 5);
-                cxt.lineTo(2, 5);
-                cxt.lineTo(-2,5);
-                cxt.lineTo(-1, -r + 25);
-                cxt.lineTo(1, -r + 35);
-                cxt.lineTo(2, 15);
-                cxt.lineWidth = 1;
-                cxt.fillStyle = "#f00";
-                cxt.fill();
-                cxt.restore();
-            }
-
-            // 画中心点
-            function drawDot() {
-                cxt.beginPath();
-                cxt.arc(0, 0, 4, 0, 2 * Math.PI, true);
-                cxt.fillStyle = "#fff";
-                cxt.fill();
-            }
-
-            // 绘制真实时间
-            function draw() {
-                cxt.clearRect(0, 0, width, height);
-                var now = new Date();
-                var hour = now.getHours();
-                var minute = now.getMinutes();
-                var second = now.getSeconds();
-                drawBg();
-                drawHour(hour, minute);
-                drawMinute(minute);
-                drawSecond(second);
-                drawDot();
-                cxt.restore();
-            }
-
-            draw();
-            setInterval(function () {
-                draw();
-            }, 1000);
-        },
-        beforeDestroy () {
+        beforeDestroy() {
         }
     }
 </script>
 <style>
-    #canvas {
-        border: 1px solid #000;
-        margin: 0 auto;
-        display: block;
+    .monkey {
+        position: fixed;
+        bottom: 400px;
+        right: 60px;
+        animation: myfirst 4s linear infinite;
+        -moz-animation: myfirst 4s linear infinite; /* Firefox */
+        -webkit-animation: myfirst 4s linear infinite; /* Safari 和 Chrome */
+        -o-animation: myfirst 4s linear infinite; /* Opera */
+    }
+
+    .monkeyColor {
+        width: 140px;
+        height: 30px;
+        border-radius: 9px;
+        opacity: 0.9;
+        animation: colorfirst 8s linear infinite;
+    }
+
+    .textChange {
+        padding: 0px 10px;
+        height: 30px;
+        line-height: 30px;
+        color: yellow;
+        font-weight: bolder;
+        font-size: 13px
+    }
+
+    .textImg {
+        width: 90px;
+        height: 90px;
+    }
+
+    .monkeyImg {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    @keyframes colorfirst {
+        0% {
+            background: red;
+        }
+        25% {
+            background: yellow;
+        }
+        50% {
+            background: blue;
+        }
+        75% {
+            background: green;
+        }
+        100% {
+            background: red;
+        }
+    }
+
+    @keyframes myfirst {
+        0% {
+            /*background: red;*/
+            top: 100px;
+        }
+        25% {
+            /*background: yellow;*/
+            top: 130px;
+        }
+        50% {
+            /*background: blue;*/
+            top: 160px;
+        }
+        75% {
+            /*background: green;*/
+            top: 130px;
+        }
+        100% {
+            /*background: red;*/
+            top: 100px;
+        }
     }
 </style>

@@ -1,0 +1,27 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "about vuePress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
+  },
+  "devDependencies": {
+    "vuepress": "^0.14.10",
+    "webpack-dev-middleware": "3.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duyi0518/blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duyi0518/blog/issues"
+  },
+  "homepage": "https://github.com/duyi0518/blog#readme"
+}

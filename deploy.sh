@@ -13,7 +13,7 @@ git init
 git add -A
 git commit -m 'deploy'
 
-# 如果发布到 https://duyi0518.github.io//blog
-git push -f git@github.com:duyi0518//blog.git master:gh-pages
+# 如果发布到 https://duyi0518.github.io/blog
+git push -f git@github.com:duyi0518/blog.git master:gh-pages
 
 cd -
