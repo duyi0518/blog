@@ -17,8 +17,12 @@ module.exports = {
             {text: 'SecondBlog', link: '/blog/SecondBlog.md'},
             { text: 'github',        // 这里是下拉列表展现形式。
                 items: [
-                    { text: 'focus-outside', link: 'https://github.com/TaoXuSheng/focus-outside'},
-                    { text: 'stylus-converter', link: 'https://github.com/TaoXuSheng/stylus-converter'},
+                    // { text: 'Zenki-nav导航', link: 'https://nav.zenki.cn/'},
+                    { text: 'SSO-单点登录', link: 'https://sso.zenki.cn/homePeo'},
+                    { text: 'LB-域名负载系统', link: 'https://lb.zenki.cn/homeAdmin/domainAdmin'},
+                    { text: 'PMS-权限角色系统', link: 'https://pms.zenki.cn/homeAdmin/personnel'},
+                    { text: 'T-HR-人力资源系统', link: 'https://t-hr.zenki.cn/homeAdmin/personnelAdmin'},
+                    { text: 'DOLPHIN-项目部署系统', link: 'https://dolphin.zenki.cn/homeAdmin/defaultPage'},
                 ]
             }
         ],
@@ -28,8 +32,8 @@ module.exports = {
         //侧边栏
         sidebar: [
             ['/', '首页'],
-            ['/blog/FirstBlog.md', '我的第一篇博客'],
-            ['/blog/SecondBlog.md', '我的第二篇博客'],
+            ['/blog/FirstBlog.md', 'Earth-FirstBlog'],
+            ['/blog/SecondBlog.md', 'SeaWave-SecondBlog'],
         ],
 
     }

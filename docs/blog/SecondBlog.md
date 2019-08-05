@@ -1,4 +1,5 @@
 <template>
-    <SecondClock/>
+    <Water/>
+    <Robot/>
     <SecondMonkey/>
 </template>

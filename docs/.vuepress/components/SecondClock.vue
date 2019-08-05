@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="clock">
         <!--时钟-->
         <canvas id="canvasTime" width="200" height="200"></canvas>
     </div>
@@ -143,8 +143,8 @@
         }
     }
 </script>
-<style>
-    #canvas {
+<style scoped>
+    .clock #canvas {
         border: 1px solid #000;
         margin: 0 auto;
         display: block;

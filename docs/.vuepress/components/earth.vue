@@ -216,9 +216,10 @@
     .content:not(.custom) {
         width: 100% !important;
         max-width: 94%!important;
-        margin: 0 !important;
+        /*margin: 0 !important;*/
     }
-
+</style>
+<style scoped>
     .earthImg {
         width: 30%;
         height: 30%;

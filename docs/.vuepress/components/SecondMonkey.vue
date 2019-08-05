@@ -26,7 +26,7 @@
                     // let a = document.getElementsByClassName("textChange")[0];
                     let a = this.$refs.textChange;
                     // window.location.reload(true);  刷新页面
-                    let array = ["🐷🐷🐷🐷🐷", "🐶🐶🐶🐶🐶", "🐱🐱🐱🐱",'🐼🐼🐼🐼'],
+                    let array = ["🐷🐷🐷🐷🐷🐷🐷", "🐶🐶🐶🐶🐶🐶🐶", "🐱🐱🐱🐱🐱🐱🐱",'🐼🐼🐼🐼🐼🐼🐼'],
                         index = -1;
                     window.onload = function () {
                         setInterval(() => {
@@ -43,7 +43,7 @@
         }
     }
 </script>
-<style>
+<style scoped>
     .monkey {
         position: fixed;
         bottom: 400px;
