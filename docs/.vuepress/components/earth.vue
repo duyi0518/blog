@@ -11,7 +11,7 @@
         </div>
 
         <div class="text findPswd">
-            <!--<span style="color: red;font-size: 20px">❤</span>-->
+            <span style="color: red;font-size: 20px">❤</span>
             <span>test-04❤️️</span>
         </div>
 

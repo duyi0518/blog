@@ -1,9 +1,7 @@
 <template>
-    <!--运动小球-->
     <div class="sportBall">
         <div class="font-topBox">
             <div class="font-extract">
-                <!--A Ball-->
                 <div class="font-square-icon">
                     <div class="square square-top"></div>
                     <div class="square square-left"></div>
@@ -55,11 +53,11 @@
     }
 
     .font-square-icon {
-        background: url('../../.vuepress/dist/img/sportBall/btn_extract.svg') no-repeat center;
+        background: url('../../.vuepress/public/img/sportBall/btn_extract.svg') no-repeat center;
     }
 
     .square {
-        background: url('../../.vuepress/dist/img/sportBall/btn_zhengfangxing.svg') no-repeat;
+        background: url('../../.vuepress/public/img/sportBall/btn_zhengfangxing.svg') no-repeat;
         background-size: 3.5px 3.5px;
     }
 
@@ -81,7 +79,7 @@
         top: 0;
         width: 24px;
         height: 25px;
-        background: url('../../.vuepress/dist/img/sportBall/btn_default_extract.svg') no-repeat center;
+        background: url('../../.vuepress/public/img/sportBall/btn_default_extract.svg') no-repeat center;
         background-size: 24px 25px;
     }
 
@@ -109,11 +107,11 @@
 
 
     .font-extract .font-square-icon.btn-square-active {
-        background: url('../../.vuepress/dist/img/sportBall/btn_extract.svg') no-repeat center !important;
+        background: url('../../.vuepress/public/img/sportBall/btn_extract.svg') no-repeat center !important;
     }
 
     .square {
-        background: url('../../.vuepress/dist/img/sportBall/btn_zhengfangxing.svg') no-repeat !important;
+        background: url('../../.vuepress/public/img/sportBall/btn_zhengfangxing.svg') no-repeat !important;
         background-size: 3.5px 3.5px !important;
     }
 
@@ -132,11 +130,11 @@
 
     .font-intelligence .btn-bg {
         animation: zhineng 3s linear infinite;
-        background-image: url("../../.vuepress/dist/img/sportBall/btn_zhineng_bg.svg") !important;
+        background-image: url("../../.vuepress/public/img/sportBall/btn_zhineng_bg.svg") !important;
     }
 
     .my-el-btn {
-        background-image: url("../../.vuepress/dist/img/sportBall/btn_zhineng.svg");
+        background-image: url("../../.vuepress/public/img/sportBall/btn_zhineng.svg");
         display: inline-block;
         width: 17px;
         height: 19px;
