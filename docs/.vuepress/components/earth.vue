@@ -9,6 +9,18 @@
                 <img src="../../.vuepress/public/img/earthBig.png" class="earthImg">
             </div>
         </div>
+
+        <div class="text findPswd">
+            <!--<span style="color: red;font-size: 20px">❤</span>-->
+            <span>test-04❤️️</span>
+        </div>
+
+        <!--流星-->
+        <div class="star"></div>
+        <div class="star pink"></div>
+        <div class="star blue"></div>
+
+        <!--阳光-->
         <div class="source"></div>
         <div class="source-beam"></div>
         <div class="c1"></div>
@@ -213,13 +225,136 @@
     }
 </script>
 <style>
+    /*流星*/
+    .star {
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #FFF;
+        top: 100px;
+        left: 500px;
+        position: relative;
+        transform-origin: 100% 0;
+        animation: star-ani 4s linear infinite;
+        -webkit-animation: star-ani 5s linear infinite;
+        box-shadow: 0 0 5px 5px rgba(255, 255, 255, .3);
+        opacity: 0;
+        z-index: 2;
+    }
+
+    .star:after {
+        content: '';
+        display: block;
+        top: 0px;
+        left: 4px;
+        border: 0px solid #fff;
+        border-width: 0px 90px 2px 90px;
+        border-color: transparent transparent transparent rgba(255, 255, 255, .3);
+        transform: rotate(-45deg) translate3d(1px, 3px, 0);
+        box-shadow: 0 0 1px 0 rgba(255, 255, 255, .1);
+        transform-origin: 0% 100%;
+    }
+
+    .pink {
+        top: 100px;
+        left: 800px;
+        background: #fff;
+        animation-delay: 3s;
+        -webkit-animation-delay: 3s;
+        -moz-animation-delay: 3s;
+    }
+
+    .pink:after {
+        border-color: transparent transparent transparent #fff;
+        animation-delay: 3s;
+        -webkit-animation-delay: 3s;
+        -moz-animation-delay: 3s;
+    }
+
+    .blue {
+        top: 120px;
+        left: 1200px;
+        background: #ffffff;
+        animation-delay: 7s;
+        -webkit-animation-delay: 7s;
+        -moz-animation-delay: 7s;
+    }
+
+    .blue:after {
+        border-color: transparent transparent transparent #ffff;
+        -webkit-animation-delay: 7s;
+        -moz-animation-delay: 7s;
+        animation-delay: 7s;
+    }
+
+    @keyframes star-ani {
+        0% {
+            opacity: 0;
+            transform: scale(0) translate3d(0, 0, 0);
+        }
+        20% {
+            opacity: 0.8;
+            transform: scale(0.2) translate3d(-100px, 100px, 0);
+        }
+        40% {
+            opacity: 0.8;
+            transform: scale(0.4) translate3d(-200px, 200px, 0);
+        }
+        60% {
+            opacity: 0.8;
+            transform: scale(0.6) translate3d(-300px, 300px, 0);
+        }
+        80% {
+            opacity: 1;
+            transform: scale(1) translate3d(-350px, 350px, 0);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1.2) translate3d(-400px, 380px, 0);
+        }
+    }
+
+    /**/
+
     .content:not(.custom) {
-        width: 100% !important;
-        max-width: 94%!important;
-        /*margin: 0 !important;*/
+        /*width: 100% !important;*/
+        max-width: none !important;
+        /*margin-right: 550px !important;*/
+        padding: 15px !important;
+        overflow: hidden !important;
     }
 </style>
 <style scoped>
+    .text {
+        color: white;
+        font-size: 28px;
+        font-weight: bolder;
+        margin: 0 30%
+    }
+
+    .findPswd {
+        width: 180px;
+        text-align: center;
+        font-size: 20px;
+        mso-border-shadow: yes;
+        height: 40px;
+        line-height: 40px;
+        border-style: solid;
+        border-radius: 8px;
+        border-color: #00c2fa;
+        box-shadow: 0 0 10px #00c2fa;
+        color: #00bbf1
+    }
+
+    .findPswd:hover {
+        border-style: solid !important;
+        border-color: #00c2fa !important;
+        box-shadow: 0 0 60px #00c2fa !important;
+        color: #fff9ea !important;
+        /*color: #00c2fa !important;*/
+    }
+
     .earthImg {
         width: 30%;
         height: 30%;
@@ -240,7 +375,8 @@
         z-index: 1;
         position: absolute;
         top: 220px;
-        left: 1110px;
+        right: 11%;
+        /*left: 1110px;*/
     }
 
     .homePeople #fCanvas, #bCanvas {
@@ -259,7 +395,8 @@
         opacity: 1;
         position: absolute;
         z-index: 2;
-        left: 1180px;
+        right: 15%;
+        /*left: 1180px;*/
         top: 300px;
     }
 

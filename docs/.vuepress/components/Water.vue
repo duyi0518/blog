@@ -4,7 +4,7 @@
         <div class="first_text">Animation of Waves</div>
         <div class="second_text">This is the Second Blog</div>
         <div class="small_text">Don't give up and don't give in</div>
-        <div class="small_text">Keep trying no matter how hard it seems. it will get easier.</div>
+        <div class="small_text">Keep trying no matter how hard it seems. It will get easier.</div>
     </div>
 </template>
 
@@ -19,12 +19,13 @@
     }
 </script>
 <style>
-     .content:not(.custom){
-        max-width: 90% !important;
-        padding: 2rem 0!important;
-        /*margin: 0 auto!important;*/
-
-     }
+    .content:not(.custom) {
+        /*width: 100% !important;*/
+        max-width: none !important;
+        /*margin-right: 550px !important;*/
+        padding:15px!important;
+        overflow: hidden!important;
+    }
 </style>
 <style scoped>
     .water .content:not(.custom) > *:first-child{

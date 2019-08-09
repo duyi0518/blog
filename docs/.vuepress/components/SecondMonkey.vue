@@ -26,7 +26,7 @@
                     // let a = document.getElementsByClassName("textChange")[0];
                     let a = this.$refs.textChange;
                     // window.location.reload(true);  刷新页面
-                    let array = ["🐷🐷🐷🐷🐷🐷🐷", "🐶🐶🐶🐶🐶🐶🐶", "🐱🐱🐱🐱🐱🐱🐱",'🐼🐼🐼🐼🐼🐼🐼'],
+                    let array = ["🐷🐷🐷🐷🐷🐷🐷🐷🐷🐷🐷🐷🐷", "🐶🐶🐶🐷🐷🐷🐷🐷🐷🐶🐶🐶🐶", "🐱🐱🐱🐱🐱🐱🐱",'🐼🐼🐼🐼🐼🐼🐼'],
                         index = -1;
                     window.onload = function () {
                         setInterval(() => {
@@ -55,20 +55,25 @@
     }
 
     .monkeyColor {
-        width: 140px;
+        width: 100%;
         height: 30px;
         border-radius: 9px;
         opacity: 0.9;
         animation: colorfirst 8s linear infinite;
+        z-index: 999;
     }
 
     .textChange {
-        padding: 0px 10px;
+        width: 100%;
+        word-wrap: break-word;
+        word-break: normal;
+        padding: 0 10px;
         height: 30px;
         line-height: 30px;
         color: yellow;
         font-weight: bolder;
-        font-size: 13px
+        font-size: 13px;
+        z-index: 999;
     }
 
     .textImg {

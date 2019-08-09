@@ -23,6 +23,7 @@ module.exports = {
                     { text: 'PMS-权限角色系统', link: 'https://pms.zenki.cn/homeAdmin/personnel'},
                     { text: 'T-HR-人力资源系统', link: 'https://t-hr.zenki.cn/homeAdmin/personnelAdmin'},
                     { text: 'DOLPHIN-项目部署系统', link: 'https://dolphin.zenki.cn/homeAdmin/defaultPage'},
+                    { text: 'HUSKY-哈士奇系统', link: 'https://huskyweb.zenki.cn/'},
                 ]
             }
         ],
