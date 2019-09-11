@@ -1,4 +1,5 @@
 # vuePress system #
+# 个人博客 #
 基于Vue.js 2.x系列 vuePress js canvas css3属性等。
 
 ## 准备工作 ##
@@ -12,37 +13,40 @@
 
 ## 目录结构介绍 ##
 
-	|-- build                            // webpack配置文件
-	|-- config                           // 项目打包路径
-	|-- src                              // 源码目录
-    ├─service                            // 服务端
-    │   │-- app.js                       // express 入口文件
-    │   |-- api                          // 接口
-    │       │-- userApi.js               // 接口映射文件
-    │   |-- db                           // 数据库
-    │       |-- db.js                    // 连接数据库
-    │       |-- sqlMap.js                // 数据库映射文件
-	|   |-- components                   // 组件
-	|       |-- common                   // 公共组件
-	|           |-- Header.vue           // 公共头部
-	|           |-- Home.vue           	 // 公共路由入口
-	|           |-- Sidebar.vue          // 公共左边栏
-	|		|-- page                   	 // 主要路由页面
-	|           |-- Identify.vue         // 图形验证码
-	|           |-- Login.vue            // 登录
-	|           |-- ModifyPassword.vue   // 修改密码
-	|           |-- ModifyUser.vue       // 修改用户
-	|           |-- Readme.vue           // 简介
-	|           |-- Register.vue         // 注册组件
-	|           |-- UserCenter.vue       // 用户中心
-    |           |-- Success.vue          // 修改成功
-	|   |-- App.vue                      // 页面入口文件
-	|   |-- main.js                      // 程序入口文件，加载各种公共组件
-	|-- .babelrc                         // ES6语法编译配置
-	|-- .editorconfig                    // 代码编写规格
+
+    ├─docs                               // 主文件
+	│   |-- .vuepress                    // 项目代码文件夹
+	│		|-- commponents              // 项目组建
+    │           |-- earth.vue            // 第一篇博客地球
+    │           |-- Robot.vue            // 第二篇博客机器人
+    │           |-- SecondClock.vue      // 博客首页时钟动画
+    │           |-- SecondMonkey.vue     // 第二篇博客孙悟空
+    │           |-- SportBall.vue        // 第二篇博客运动球
+    │           |-- Water.vue            // 第二篇博客海浪线
+	|       |-- dist                     // 打包后项目文件
+	|           |-- ...          	     // 此处省略诸多文件
+	|           |-- ...          	     // 此处省略诸多文件
+	|		|-- public                   // 项目公共文件夹
+	│           |-- css                  // 项目样式文件夹
+	│           |-- img                  // 项目图片文件夹
+	│           |-- js                   // 项目脚本文件夹
+	│           |-- headers.png          // 主页面引用图片
+	│       |-- vue                      // 公共组件
+	│           |-- README.md            // 说明
+	│   |-- config.js                    // 主页面-导航配置
+	│   |-- enhanceApp.js                // 项目引用
+	│   |-- override.styl                // 选择主题
+    │   |-- blog                         // 页签
+    │       |-- FirstBlog.md             // 第一篇博客文件
+    │       |-- index.md                 // 空余文件
+    │       |-- SecondBlog.md            // 第二篇博客文件
+	|   |-- README.md                    // 说明
+	|-- node_modules                     // 项目依赖
 	|-- .gitignore                       // 忽略的文件
-	|-- index.html                       // 入口html文件
+	|-- .gitlab-ci.y                     // 未知文件
+	|-- .deploy.sh                       // 上传部署配置文件
 	|-- package.json                     // 项目及工具的依赖配置文件
+	|-- package-lock.json                // 项目配置文件
 	|-- README.md                        // 说明
 
 

@@ -10,10 +10,13 @@
             </div>
         </div>
 
-        <div class="text findPswd">
-            <span style="color: red;font-size: 20px">❤</span>
-            <span>test-04❤️️</span>
+        <div class="textCenter">
+            <div class="text findPswd"
+                 v-for="(item ,index) in moreUrls" :key="index"
+                 @click="handleClick(index)"
+            >{{item.text}}</div>
         </div>
+
 
         <!--流星-->
         <div class="star"></div>
@@ -43,7 +46,12 @@
     // import "../../.vuepress/public/js/liuxing.js"
     export default {
         data() {
-            return {};
+            return {
+                moreUrls: [{text: 'Zenki-官网'}, {text: 'SSO-单点登录'},
+                    {text: 'LB-域名负载系统'}, {text: 'PMS-权限角色系统'},
+                    {text: 'T-HR-人力资源系统'}, {text: 'DOLPHIN-项目部署系统'},
+                    {text: 'HUSKY-哈士奇系统'}]
+            };
         },
         created() {
 
@@ -221,7 +229,25 @@
                 }
             }
         },
-        methods: {}
+        methods: {
+            handleClick(index){
+                if(index===0){
+                    window.open('http://shuhu.zenki.cn/')
+                }else if(index===1){
+                    window.open('https://sso.zenki.cn/homePeo')
+                }else if(index===2){
+                    window.open('https://lb.zenki.cn/homeAdmin/domainAdmin')
+                }else if(index===3){
+                    window.open('https://pms.zenki.cn/homeAdmin/personnel')
+                }else if(index===4){
+                    window.open('https://t-hr.zenki.cn/homeAdmin/personnelAdmin')
+                }else if(index===5){
+                    window.open('https://dolphin.zenki.cn/homeAdmin/defaultPage')
+                }else if(index===6){
+                    window.open('https://huskyweb.zenki.cn/')
+                }
+            }
+        }
     }
 </script>
 <style>
@@ -326,17 +352,32 @@
     }
 </style>
 <style scoped>
+    .textCenter {
+        position: absolute;
+        top: 40%;
+        left: 12%;
+        z-index: 999;
+        display: flex;
+        flex-direction: row;
+        width: 800px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
     .text {
         color: white;
-        font-size: 28px;
+        font-size: 10px;
         font-weight: bolder;
-        margin: 0 30%
+        /*width: 100px;*/
+        margin: 0 10px 20px 10px;
+        cursor: pointer;
     }
 
     .findPswd {
-        width: 180px;
+        width: 150px;
+        padding: 5px 8px;
         text-align: center;
-        font-size: 20px;
+        font-size: 10px;
         mso-border-shadow: yes;
         height: 40px;
         line-height: 40px;
@@ -344,15 +385,21 @@
         border-radius: 8px;
         border-color: #00c2fa;
         box-shadow: 0 0 10px #00c2fa;
-        color: #00bbf1
+        /*color: #00bbf1;*/
+        background: linear-gradient(to right, #ffffff, #00bbf1);
+        -webkit-background-clip: text;
+        color: transparent;
     }
 
     .findPswd:hover {
         border-style: solid !important;
         border-color: #00c2fa !important;
         box-shadow: 0 0 60px #00c2fa !important;
-        color: #fff9ea !important;
-        /*color: #00c2fa !important;*/
+        background: linear-gradient(to right, rgba(235, 235, 0, 0.97), #ffff00);
+        -webkit-background-clip: text;
+        color: transparent;
+        text-shadow: 1px 1px 8px rgba(255, 249, 234, 0.98);
+        /*color: #fff9ea !important;*/
     }
 
     .earthImg {
@@ -364,6 +411,7 @@
         background-color: black;
         width: 100%;
         height: 600px;
+        position: relative;
     }
 
     .homePeople #canvas {
@@ -374,8 +422,8 @@
         display: block;
         z-index: 1;
         position: absolute;
-        top: 220px;
-        right: 11%;
+        top: 150px;
+        right: 8%;
         /*left: 1110px;*/
     }
 
@@ -395,9 +443,9 @@
         opacity: 1;
         position: absolute;
         z-index: 2;
-        right: 15%;
+        right: 13%;
         /*left: 1180px;*/
-        top: 300px;
+        top: 230px;
     }
 
     /* 页面光晕效果 */

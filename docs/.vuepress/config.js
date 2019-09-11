@@ -17,7 +17,7 @@ module.exports = {
             {text: 'SecondBlog', link: '/blog/SecondBlog.md'},
             { text: 'github',        // 这里是下拉列表展现形式。
                 items: [
-                    // { text: 'Zenki-nav导航', link: 'https://nav.zenki.cn/'},
+                    { text: 'Zenki-官网', link: 'http://shuhu.zenki.cn/'},
                     { text: 'SSO-单点登录', link: 'https://sso.zenki.cn/homePeo'},
                     { text: 'LB-域名负载系统', link: 'https://lb.zenki.cn/homeAdmin/domainAdmin'},
                     { text: 'PMS-权限角色系统', link: 'https://pms.zenki.cn/homeAdmin/personnel'},
