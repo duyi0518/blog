@@ -53,8 +53,8 @@
 ## 安装步骤 ##
 
 	git clone git@github.com:duyi0518/blog.git     // 把项目下载到本地
-	cd blog    // 进入项目目录
-	npm install         // 安装项目依赖，等待安装完成之后
+	cd blog                                        // 进入项目目录
+	npm install                                    // 安装项目依赖，等待安装完成之后
 
 ## 本地开发 ##
 
