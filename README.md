@@ -65,3 +65,8 @@
 
 	// 执行构建命令，生成的dist文件夹放在服务器下即可访问
 	npm run build
+
+## 部署上线 ##
+
+    // 运行npm run deploy 即可自动构建部署到github上
+    npm run deploy
