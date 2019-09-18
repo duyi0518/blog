@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#椭圆_600_1_);}
+	.st1{fill:#C2E0FF;}
+	.st2{fill:#FFFFFF;}
+</style>
+<title>机器人 icon</title>
+<linearGradient id="椭圆_600_1_" gradientUnits="userSpaceOnUse" x1="-202.6249" y1="5.6439" x2="-202.6249" y2="6.6748" gradientTransform="matrix(27.42 -27.42 27.42 27.42 5407.5742 -5704.374)">
+	<stop  offset="0" style="stop-color:#0F28F5"/>
+	<stop  offset="5.000000e-02" style="stop-color:#2C2BF5"/>
+	<stop  offset="0.21" style="stop-color:#8033F6"/>
+	<stop  offset="0.32" style="stop-color:#B538F6"/>
+	<stop  offset="0.37" style="stop-color:#CA3AF6"/>
+	<stop  offset="0.42" style="stop-color:#C439F6"/>
+	<stop  offset="0.49" style="stop-color:#B338F6"/>
+	<stop  offset="0.57" style="stop-color:#9735F6"/>
+	<stop  offset="0.65" style="stop-color:#6F31F6"/>
+	<stop  offset="0.74" style="stop-color:#3E2CF5"/>
+	<stop  offset="0.82" style="stop-color:#0F28F5"/>
+	<stop  offset="0.85" style="stop-color:#112CF5"/>
+	<stop  offset="0.89" style="stop-color:#1636F5"/>
+	<stop  offset="0.92" style="stop-color:#1E49F5"/>
+	<stop  offset="0.94" style="stop-color:#2A62F6"/>
+	<stop  offset="0.97" style="stop-color:#3983F6"/>
+	<stop  offset="1" style="stop-color:#4CABF7"/>
+	<stop  offset="1" style="stop-color:#4CACF7"/>
+</linearGradient>
+<ellipse id="椭圆_600" class="st0" cx="20" cy="20" rx="20" ry="20"/>
+<path id="路径_4191" class="st1" d="M18.9,27.9h2.6v4.2h-2.6V27.9z M10,17.9v6.3H7.9c-0.6,0-1-0.5-1-1V19c0-0.6,0.5-1,1-1L10,17.9
+	z M30.5,17.9h2.1c0.6,0,1,0.5,1,1v4.2c0,0.6-0.5,1-1,1h-2.1V17.9z M20,11.6V8.4h0.5v3.2c2.1,0.2,3.7,1.9,3.7,3.9h-7.9
+	C16.3,13.5,17.9,11.7,20,11.6L20,11.6z"/>
+<path id="路径_4192" class="st2" d="M24,22.6c-0.7,0-1.3-0.6-1.3-1.3c0-0.7,0.6-1.3,1.3-1.3c0.7,0,1.3,0.6,1.3,1.3c0,0,0,0,0,0
+	C25.3,22,24.7,22.6,24,22.6C24,22.6,24,22.6,24,22.6L24,22.6z M16,22.6c-0.7,0-1.3-0.6-1.3-1.3S15.3,20,16,20c0.7,0,1.3,0.6,1.3,1.3
+	c0,0,0,0,0,0C17.4,22,16.8,22.6,16,22.6C16.1,22.6,16.1,22.6,16,22.6L16,22.6z M20.3,9.5c-0.7,0-1.3-0.6-1.3-1.3
+	c0-0.7,0.6-1.3,1.3-1.3c0.7,0,1.3,0.6,1.3,1.3c0,0,0,0,0,0C21.6,8.9,21,9.5,20.3,9.5C20.3,9.5,20.3,9.5,20.3,9.5L20.3,9.5z
+	 M16.6,16.8c-2.5,0-4.5,1.9-4.5,4.4c0,2.5,1.9,4.5,4.4,4.5H24c2.5,0,4.5-1.9,4.5-4.4c0-2.5-1.9-4.5-4.4-4.5H16.6z M12.6,13.2h15.3
+	c2.3,0,4.2,1.9,4.2,4.2l0,0v7.4c0,2.3-1.9,4.2-4.2,4.2H12.6c-2.3,0-4.2-1.9-4.2-4.2v-7.4C8.4,15.1,10.3,13.2,12.6,13.2L12.6,13.2z"
+	/>
+<path id="路径_4193" class="st1" d="M16.6,16.9c-2.5,0.1-4.4,2.1-4.3,4.6c0.1,2.3,1.9,4.2,4.2,4.3c0,0,0.1,0,0.1,0H24
+	c2.5,0.1,4.6-1.7,4.7-4.2c0.1-2.5-1.7-4.6-4.2-4.7c-0.1,0-0.3,0-0.4,0H16.6z M16.6,16.1H24c2.9,0.1,5.2,2.6,5,5.5
+	c-0.1,2.7-2.3,4.9-5,5h-7.4c-2.9-0.1-5.2-2.6-5-5.5C11.7,18.4,13.8,16.2,16.6,16.1z"/>
+<path class="st2" d="M20.3,30.1c-3.3,0-6.1,2.7-6.1,6c0,1.2,0.4,2.4,1,3.4c3.4,0.8,6.9,0.8,10.2-0.2c1.8-2.8,0.9-6.6-1.9-8.3
+	C22.5,30.3,21.4,30,20.3,30.1L20.3,30.1z"/>
+</svg>

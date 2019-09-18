@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.604" height="19.17" viewBox="0 0 16.604 19.17">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #f0880f;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: 0.8px;
+        stroke-dasharray: 0.8 0.8;
+      }
+    </style>
+  </defs>
+  <g id="组_4754" data-name="组 4754" transform="translate(-1307.893 -59.422)">
+    <g id="组_4753" data-name="组 4753" transform="translate(482.393 -509)">
+      <g id="组_4667" data-name="组 4667" transform="translate(826 569)">
+        <path id="路径_3790" data-name="路径 3790" class="cls-1" d="M2115.323,163.447v-9.008l-7.8-4.5-7.8,4.5v9.008l7.8,4.5Z" transform="translate(-2099.72 -149.935)"/>
+        <path id="路径_3791" data-name="路径 3791" class="cls-1" d="M2296.679,375.471v-3.783L2293.4,369.8l-3.277,1.892v3.783l3.277,1.892Z" transform="translate(-2285.601 -364.572)"/>
+        <line id="直线_371" data-name="直线 371" class="cls-1" x2="7.777" y2="4.507" transform="translate(0.033 4.535)"/>
+        <line id="直线_372" data-name="直线 372" class="cls-2" x2="4.533" y2="2.614" transform="translate(10.984 10.861)"/>
+        <line id="直线_373" data-name="直线 373" class="cls-2" x1="4.533" y2="2.614" transform="translate(0.02 10.88)"/>
+        <line id="直线_374" data-name="直线 374" class="cls-1" x1="7.807" y2="4.53" transform="translate(7.776 4.567)"/>
+        <line id="直线_375" data-name="直线 375" class="cls-1" x1="0.063" y2="8.935" transform="translate(7.73 9.079)"/>
+        <line id="直线_376" data-name="直线 376" class="cls-2" y1="5.14" transform="translate(7.808 0.134)"/>
+      </g>
+    </g>
+  </g>
+</svg>

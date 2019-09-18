@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.413" height="18.953" viewBox="0 0 16.413 18.953">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #f0880f;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0.8px;
+        stroke-dasharray: 0.8 0.8;
+      }
+
+      .cls-4 {
+        fill: #00388a;
+      }
+
+      .cls-5 {
+        fill: #ffc37e;
+      }
+
+      .cls-6 {
+        fill: #b26100;
+      }
+
+      .cls-7 {
+        fill: #dd7801;
+      }
+    </style>
+  </defs>
+  <g id="组_4776" data-name="组 4776" transform="translate(-155.866 -47.579)">
+    <path id="路径_3955" data-name="路径 3955" class="cls-1" d="M107.325,1062.33v-8.9l-7.706-4.449-7.706,4.5v8.844l7.706,4.449Z" transform="translate(64.454 -1000.824)"/>
+    <line id="直线_381" data-name="直线 381" class="cls-1" x2="7.725" y2="4.474" transform="translate(156.357 52.671)"/>
+    <path id="路径_3989" data-name="路径 3989" class="cls-2" d="M0,0,4.447,2.505" transform="translate(167.31 58.978)"/>
+    <line id="直线_383" data-name="直线 383" class="cls-3" x1="4.418" y2="2.472" transform="translate(156.386 59.017)"/>
+    <line id="直线_384" data-name="直线 384" class="cls-1" x1="7.712" y2="4.475" transform="translate(164.048 52.669)"/>
+    <line id="直线_385" data-name="直线 385" class="cls-1" x1="0.005" y2="8.829" transform="translate(164.06 57.127)"/>
+    <line id="直线_386" data-name="直线 386" class="cls-3" y1="5.078" transform="translate(164.079 48.29)"/>
+    <path id="路径_3956" data-name="路径 3956" class="cls-4" d="M99.215,1057.489h0Z" transform="translate(64.857 -1000.354)"/>
+    <g id="组_4773" data-name="组 4773">
+      <path id="路径_3957" data-name="路径 3957" class="cls-5" d="M99.387,1053.9l-3.284,1.9v.006l3.284,1.89,3.284-1.888v-.008Z" transform="translate(64.686 -1000.553)"/>
+      <path id="路径_3958" data-name="路径 3958" class="cls-6" d="M96.1,1055.7v3.786l3.284,1.9v-3.792l0-.007Z" transform="translate(64.686 -1000.453)"/>
+      <path id="路径_3959" data-name="路径 3959" class="cls-7" d="M99.215,1057.588h0v3.792l3.284-1.9V1055.7Z" transform="translate(64.857 -1000.453)"/>
+    </g>
+    <path id="路径_3977" data-name="路径 3977" class="cls-4" d="M101.748,1058.865Z" transform="translate(64.997 -1000.279)"/>
+    <path id="路径_3981" data-name="路径 3981" class="cls-4" d="M96.512,1058.995Z" transform="translate(64.708 -1000.271)"/>
+    <path id="路径_3985" data-name="路径 3985" class="cls-4" d="M99.235,1054.624Z" transform="translate(64.859 -1000.513)"/>
+  </g>
+</svg>
